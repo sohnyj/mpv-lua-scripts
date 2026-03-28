@@ -1,9 +1,5 @@
 # mpv-lua-scripts
 
-Custom Lua scripts for [mpv](https://mpv.io/).
-
----
-
 ## toggle_autocrop
 
 An mpv script for automatic letterbox/pillarbox cropping. Uses FFmpeg's `cropdetect` filter to detect black borders in real time and removes them via the `video-crop` property. Primarily designed for ultrawide (21:9) monitors to remove letterboxing. Automatically adjusts cropping on the fly for content with dynamic aspect ratios, such as IMAX scenes.
