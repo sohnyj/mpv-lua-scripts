@@ -51,7 +51,7 @@ Configure via `script-opts/toggle_autocrop.conf` (recommended over editing the s
 | `rtxvsr_label` | `rtxvsr` | Filter label of the RTX VSR script |
 | `osd` | `Autocrop` | Display name shown in OSD |
 | `label` | `autocrop` | Label for vf filter and user-data |
-| `cropdetect_limit` | `24/255` | Cropdetect threshold (lower = more sensitive) |
+| `cropdetect_limit` | `24/255` | Cropdetect threshold (higher = more sensitive) |
 | `cropdetect_round` | `16` | Crop area rounding unit in pixels |
 | `min_apply_width` | `0.5` | Minimum crop width ratio relative to source. Crop is ignored if below this |
 | `min_apply_height` | `0.5` | Minimum crop height ratio relative to source. Crop is ignored if below this |
