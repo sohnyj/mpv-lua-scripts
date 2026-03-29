@@ -12,7 +12,7 @@ Based on [mpv's built-in autocrop.lua](https://github.com/mpv-player/mpv/blob/ma
 - Commit delay (2 poll cycles) to prevent abrupt crop changes
 - Minimum crop area threshold to prevent excessive cropping
 - Automatic crop reset and detection on playback
-- Detection paused during pause or non-1x playback speed
+- Detection paused during pause, seek or non-1x playback speed
 - Mutual exclusion with `toggle_rtxvsr` (optional auto-disable), since `video-crop` / FFmpeg crop filters are incompatible with the RTX VSR filter
 - Automatic hwdec mode switching (copyback mode for `cropdetect` filter compatibility)
 
