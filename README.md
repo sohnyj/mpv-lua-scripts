@@ -11,7 +11,7 @@ Based on [mpv's built-in autocrop.lua](https://github.com/mpv-player/mpv/blob/ma
 - Real-time black border detection and automatic cropping via `cropdetect`
 - Commit delay (2 poll cycles) to prevent abrupt crop changes
 - Minimum crop area threshold to prevent excessive cropping
-- Automatic crop reset and re-detection on seek
+- Automatic crop reset and detection on playback
 - Detection paused during pause or non-1x playback speed
 - Mutual exclusion with `toggle_rtxvsr` (optional auto-disable), since `video-crop` / FFmpeg crop filters are incompatible with the RTX VSR filter
 - Automatic hwdec mode switching (copyback mode for `cropdetect` filter compatibility)
@@ -95,8 +95,8 @@ An mpv script for toggling NVIDIA RTX Video Super Resolution (VSR). Uses the `d3
 ### Requirements
 
 - NVIDIA RTX GPU with VSR support
-- Windows with D3D11 GPU context (`--gpu-context=d3d11`)
-- `--vo=gpu-next`
+- Windows with D3D11 GPU context (`gpu-context=d3d11`)
+- `vo=gpu-next`
 
 ### Installation
 
